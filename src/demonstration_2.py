@@ -18,4 +18,15 @@ when we know the value we are counting will always be non-negative."
 """
 def hamming_weight(n):
     # Your code here
+    bin_rep = bin(n)
+    counter = 0
+​
+    for digit in bin_rep:
+        if digit == '1':
+            counter += 1
+​
+    return counter 
+​
+print(hamming_weight(201))
+
 
